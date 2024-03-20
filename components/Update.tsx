@@ -67,7 +67,7 @@ const Room: React.FC<RoomProps> = ({
             style={{ color: colors[index % 5].primaryColor, cursor: 'pointer' }}
             onClick={handleDelete}
           />
-        </div> */}
+        </div> 
         <button className="btn btn-primary mt-2 bottom-0 item-center">Join Meeting</button>
       </div>
       {/* <EditTeams modal={modal} toggle={toggle} updateTeams={updateTeams} teamObj={teamObj} /> */}
