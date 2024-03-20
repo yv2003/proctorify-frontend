@@ -53,10 +53,10 @@ const Room: React.FC<RoomProps> = ({
           className="card-header"
           style={{ backgroundColor: colors[index % 5].secondaryColor, borderRadius: '10px' }}
         >
-          {teamObj.Name}
+          {teamObj.name}
         </span>
-        <p className = "mt-3">{teamObj.Description}</p>
-        {/* <div style={{ position: 'absolute', right: '20px', bottom: '20px' }}>
+        <p className = "mt-3">{teamObj.leader}</p>
+        <div style={{ position: 'absolute', right: '20px', bottom: '20px' }}>
           <i
             className="far fa-edit mr-3 pr-3"
             style={{ color: colors[index % 5].primaryColor, cursor: 'pointer' }}
