@@ -57,7 +57,7 @@ const ToDoList: React.FC<ToDoListProps> = () => {
   return (
     <>
       <div className="header text-center">
-        <h3 className="pt-3">WELCOME TO YOUR TEAMS</h3>
+        <h3 className="pt-3">YOUR TEAMS</h3>
         <button className="btn btn-primary mt-2" onClick={() => setModal(true)}>
           Create Teams
         </button>

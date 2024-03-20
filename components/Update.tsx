@@ -46,7 +46,7 @@ const Room: React.FC<RoomProps> = ({
 
 
   return (
-    <div className="card-wrapper mr-5" onClick={handleClickRoute}>
+    <div className="card-wrapper mr-5 flex flex-row" onClick={handleClickRoute}>
       <div className="card" style={{ backgroundColor: colors[index % 5].primaryColor }} ></div>
       <div className="team-holder" >
         <span
@@ -56,7 +56,7 @@ const Room: React.FC<RoomProps> = ({
           {teamObj.Name}
         </span>
         <p className = "mt-3">{teamObj.Description}</p>
-        <div style={{ position: 'absolute', right: '20px', bottom: '20px' }}>
+        {/* <div style={{ position: 'absolute', right: '20px', bottom: '20px' }}>
           <i
             className="far fa-edit mr-3 pr-3"
             style={{ color: colors[index % 5].primaryColor, cursor: 'pointer' }}
@@ -67,7 +67,8 @@ const Room: React.FC<RoomProps> = ({
             style={{ color: colors[index % 5].primaryColor, cursor: 'pointer' }}
             onClick={handleDelete}
           />
-        </div>
+        </div> */}
+        <button className="btn btn-primary mt-2 bottom-0 item-center">Join Meeting</button>
       </div>
       {/* <EditTeams modal={modal} toggle={toggle} updateTeams={updateTeams} teamObj={teamObj} /> */}
     </div>
